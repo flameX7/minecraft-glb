@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html style="background: transparent;">
   <head>
     <style>
-      body { margin: 0; background: transparent; }
+      * { margin: 0; padding: 0; }
+      html, body { background: transparent !important; }
       model-viewer { width: 100%; height: 100vh; }
     </style>
   </head>
   <body>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <model-viewer
-  src="https://raw.githubusercontent.com/flameX7/minecraft-glb/main/untitled.glb"
-  camera-controls
-  auto-rotate
-  transparent-background
-  style="width:100%; height:100vh; background: transparent;">
-</model-viewer>
+      src="https://raw.githubusercontent.com/flameX7/minecraft-glb/main/untitled.glb"
+      camera-controls
+      auto-rotate
+      alpha
+      transparent-background
+      style="width:100%; height:100vh; --poster-color: transparent;">
+    </model-viewer>
   </body>
 </html>
